@@ -10,6 +10,7 @@ from concurrent.futures import ThreadPoolExecutor
     从html_url.txt文件里拿出项目url 然后添加到 q1 队列里
 """
 def html_url_get(q1):
+    print("开始")
     with open("myhtml_url.txt",'r',encoding='utf-8') as f:
         file_list = f.readlines()
     for fi in file_list:
